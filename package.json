@@ -1,0 +1,21 @@
+
+{
+  "name": "qrcode-generator",
+  "version": "1.1.0",
+  "description": "Gerador de QR Codes para links de e-commerce utilizando Node.js no terminal.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "qrcode",
+    "ecommerce",
+    "terminal"
+  ],
+  "author": "Gabriel Lafis",
+  "license": "MIT",
+  "dependencies": {
+    "qrcode": "^1.5.1"
+  }
+}
