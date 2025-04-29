@@ -33,7 +33,7 @@ O QR Code será salvo automaticamente na pasta `/output/`, nomeado conforme o pr
 - Biblioteca `qrcode`
 
 ## ✨ Sobre o projeto
-Projeto desenvolvido por mim como parte do desafio da Formação Node.js da DIO, inspirado no repositório:
+Projeto desenvolvido como parte do desafio da Formação Node.js da DIO, inspirado no repositório:
 [https://github.com/digitalinnovationone/formacao-nodejs/tree/main/projeto-qrcode](https://github.com/digitalinnovationone/formacao-nodejs/tree/main/projeto-qrcode)
 
 ---
