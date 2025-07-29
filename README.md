@@ -37,3 +37,23 @@ Projeto desenvolvido como parte do desafio da Formação Node.js da DIO, inspira
 [https://github.com/digitalinnovationone/formacao-nodejs/tree/main/projeto-qrcode](https://github.com/digitalinnovationone/formacao-nodejs/tree/main/projeto-qrcode)
 
 ---
+
+
+## 📋 Descrição
+
+Descreva aqui o conteúdo desta seção.
+
+
+## 📦 Instalação
+
+Descreva aqui o conteúdo desta seção.
+
+
+## 💻 Uso
+
+Descreva aqui o conteúdo desta seção.
+
+
+## 📄 Licença
+
+Descreva aqui o conteúdo desta seção.
