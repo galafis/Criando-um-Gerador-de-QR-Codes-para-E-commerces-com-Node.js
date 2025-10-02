@@ -2,6 +2,7 @@
 
 ![Hero Image](assets/hero_image.png)
 
+
 [![Node.js](https://img.shields.io/badge/Node.js-18.x-green?style=flat-square&logo=node.js)](https://nodejs.org/)
 [![QR Code](https://img.shields.io/badge/QR%20Code-Generator-blue?style=flat-square&logo=qrcode)](https://www.npmjs.com/package/qrcode)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
