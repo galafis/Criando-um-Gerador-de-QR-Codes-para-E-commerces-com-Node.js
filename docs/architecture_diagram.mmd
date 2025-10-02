@@ -1,0 +1,5 @@
+graph TD
+    A[Usuário] -->|Digita Nome e Link do Produto| B(Aplicação Node.js)
+    B -->|Usa Biblioteca qrcode| C{Geração de QR Code}
+    C -->|Salva QR Code como PNG| D[Pasta output/]
+    D -->|Exibe Caminho do Arquivo| A

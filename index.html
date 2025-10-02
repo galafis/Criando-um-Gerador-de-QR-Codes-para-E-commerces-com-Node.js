@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QR Codes para E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style>
+        body { margin: 20px; }
+        .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .section { margin-bottom: 30px; }
+        .code-block { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        .qr-example { text-align: center; margin-top: 20px; }
+        .qr-example img { max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gerador de QR Codes para E-commerce 🛒📦</h1>
+            <p>Ferramenta para gerar QR Codes de links de produtos para e-commerces.</p>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Como usar</h2>
+            <p>Este projeto é uma ferramenta de linha de comando. Siga os passos abaixo para utilizá-lo:</p>
+            <ol>
+                <li><strong>Clone o repositório:</strong>
+                    <pre class="code-block"><code>git clone https://github.com/galafis/Criando-um-Gerador-de-QR-Codes-para-E-commerces-com-Node.js.git</code></pre>
+                </li>
+                <li><strong>Navegue até a pasta do projeto:</strong>
+                    <pre class="code-block"><code>cd Criando-um-Gerador-de-QR-Codes-para-E-commerces-com-Node.js</code></pre>
+                </li>
+                <li><strong>Instale as dependências:</strong>
+                    <pre class="code-block"><code>npm install</code></pre>
+                </li>
+                <li><strong>Inicie o gerador:</strong>
+                    <pre class="code-block"><code>npm start</code></pre>
+                </li>
+                <li>Siga as instruções no terminal para digitar o <strong>NOME</strong> e o <strong>LINK</strong> do produto.</li>
+            </ol>
+            <p>O QR Code será salvo automaticamente na pasta <code>/src/output/</code>, nomeado conforme o produto.</p>
+        </div>
+
+        <div class="section">
+            <h2>🛍️ Funcionalidades</h2>
+            <ul>
+                <li>Gera QR Codes a partir de links de produtos.</li>
+                <li>Salva os QR Codes como imagens <code>.png</code> com o nome do produto.</li>
+                <li>Mensagens amigáveis no terminal.</li>
+                <li>Pasta <code>src/output</code> automática para armazenar seus QR Codes.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📦 Tecnologias usadas</h2>
+            <ul>
+                <li>Node.js</li>
+                <li><code>qrcode</code> (biblioteca para geração de QR Codes)</li>
+                <li><code>readline</code> (módulo nativo do Node.js para interação com o terminal)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🏗️ Arquitetura do Projeto</h2>
+            <p>O diagrama abaixo ilustra a arquitetura do gerador de QR Codes:</p>
+            <div class="qr-example">
+                <img src="assets/architecture_diagram.png" alt="Diagrama de Arquitetura">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Exemplo de QR Code Gerado</h2>
+            <p>Aqui está um exemplo de um QR Code que pode ser gerado pela ferramenta:</p>
+            <div class="qr-example">
+                <img src="assets/sample_qr_code.png" alt="Exemplo de QR Code">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>👨‍💻 Autor</h2>
+            <p><strong>Gabriel Demetrios Lafis</strong></p>
+        </div>
+    </div>
+</body>
+</html>
+
