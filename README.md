@@ -50,7 +50,29 @@ O QR Code será salvo automaticamente na pasta `/src/output/`, nomeado conforme 
 
 O diagrama abaixo ilustra a arquitetura do gerador de QR Codes:
 
-![Diagrama de Arquitetura](assets/architecture_diagram.png)
+```mermaid
+flowchart TD
+    A["👤 Usuário\n(Terminal)"] -->|"Digite nome do produto"| B["📥 readline\n(Input interativo)"]
+    B -->|"Digite URL do produto"| C["🔗 URL do Produto\nhttps://loja.com/produto"]
+    C --> D["⚙️ qrcode lib\n(Geração do QR Code)"]
+    D --> E["🖼️ Buffer PNG\n(Imagem em memória)"]
+    E --> F["💾 fs.writeFile\n(Salva na pasta /src/output/)"]
+    F --> G["📂 produto-nome.png\n(Arquivo de saída)"]
+    G --> H["✅ Mensagem de sucesso\nno terminal"]
+```
+
+```mermaid
+graph LR
+    subgraph Input
+        U["👤 Usuário"] -->|nome + URL| RL["readline"]
+    end
+    subgraph Processamento
+        RL --> QR["qrcode.toFile()"]
+    end
+    subgraph Output
+        QR -->|"PNG gerado"| OUT["📁 src/output/\nproduto.png"]
+    end
+```
 
 ### 🧪 Testes
 
@@ -113,7 +135,29 @@ The QR Code will be automatically saved in the `/src/output/` folder, named afte
 
 The diagram below illustrates the QR Code generator architecture:
 
-![Architecture Diagram](assets/architecture_diagram.png)
+```mermaid
+flowchart TD
+    A["👤 User\n(Terminal)"] -->|"Enter product name"| B["📥 readline\n(Interactive Input)"]
+    B -->|"Enter product URL"| C["🔗 Product URL\nhttps://store.com/product"]
+    C --> D["⚙️ qrcode lib\n(QR Code Generation)"]
+    D --> E["🖼️ PNG Buffer\n(Image in memory)"]
+    E --> F["💾 fs.writeFile\n(Save to /src/output/)"]
+    F --> G["📂 product-name.png\n(Output file)"]
+    G --> H["✅ Success message\nin terminal"]
+```
+
+```mermaid
+graph LR
+    subgraph Input
+        U["👤 User"] -->|"name + URL"| RL["readline"]
+    end
+    subgraph Processing
+        RL --> QR["qrcode.toFile()"]
+    end
+    subgraph Output
+        QR -->|"PNG generated"| OUT["📁 src/output/\nproduct.png"]
+    end
+```
 
 ### 🧪 Tests
 
